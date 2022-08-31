@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+body{
+  background-color: #d1d1d1;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #5b5bc3;
+}
+.App-Content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 700px;
+  background-color: #d1d1d1;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.1);
+}
+.h1{
+  font-weight: bold;
+  font-size: 25px;
+  margin: 7px 0;
+  color: #d1d1d1;
+}
+label{
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+.underline{
+  font-size: 24px;
+  font-weight: 500;
+  display: block;
+  margin: 10px 0;
+  position: relative;
+  padding: 7px 2px;
+}
+.underline::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  bottom: 0;
+  left: 0;
+}
+.content-transaction{
+ width: 80%;
+ margin-left: 30px;
+}
+.content-balance{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 3px 3px 3px rgba(0,0,0,0.1);
+  margin: 15px 0;
+}
+.content-balance div{
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.income{
+  color: rgb(61, 160, 61);
+  font-weight: 500;
+}
+.expence{
+  color: rgb(195, 56, 56);
+  font-weight: 500;
+}
+.form-control{
+  margin: 10px 0;
+}
+.form-control input,.btn{
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 2px;
+}
+.btn{
+   background-color: #5b5bc3;
+   color: #ffff;
+   padding: 0;
+}
+.list{
+  margin: 10px;
+  padding: 20px;
+    list-style: none;
+}
+
+.list li{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: 0 3px 3px 3px rgba(0,0,0,0.1);
+  margin: 7px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+.list .minus{
+  border-right: 4px solid rgb(177, 53, 53);
+}
+.list .plus{
+  border-right: 4px solid rgb(53, 177, 100);
+}
+.delete-btn{
+  position: absolute;
+  top: 5px;
+  right: -25px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: rgb(177, 53, 53);
+  color: #fff;
+  border: none;
+}
+.btn-plus{
+  background-color: rgb(53, 177, 100);
+  
+}
+.btn-minus{
+  background-color: rgb(177, 53, 53);
+}
+
+@media screen and (max-width: 468px) {
+  .App-Content{
+  
+    width: 100%;
+    height: 100vh;
+    
+  }
+}
